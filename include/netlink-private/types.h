@@ -18,6 +18,9 @@
 #include <netlink-private/route/tc-api.h>
 #include <netlink-private/route/link/sriov.h>
 #include <netlink-private/route/nexthop-encap.h>
+#ifndef in_addr_t
+typedef uint32_t in_addr_t;
+#endif
 #include <linux/netlink.h>
 #include <linux/rtnetlink.h>
 #include <linux/genetlink.h>
